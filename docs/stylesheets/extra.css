@@ -1,0 +1,35 @@
+.md-grid {
+    max-width: 1800px; 
+  }
+
+.img {
+    border: none;
+    padding: 0;
+}
+.md-header__button.md-logo img {
+  height: 48px;
+  width: auto;
+}
+
+
+.md-header__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 0.4rem;  /* falls nötig */
+}
+
+/* Verschiebt den darkmode switch nach links */
+.md-search {
+  margin-right: auto;
+  margin-left: 1rem;
+}
+
+/* Verschiebt die Suchleiste leicht nach links */
+.md-search {
+  transform: translateX(-15px);
+}
+
+:root {
+  --md-primary-fg-color: #004983;
+  --md-accent-fg-color: #ff9900;
+}

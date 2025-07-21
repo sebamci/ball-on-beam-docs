@@ -1,0 +1,187 @@
+site_name: Ball-on-Beam-Course
+theme:
+  custom_dir: overrides
+  name: material
+  logo: logo.png
+  features:
+    - navigation.top
+    - navigation.indexes
+    - navigation.path
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - toc.integrate
+
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: custom
+      accent: custom
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: custom
+      accent: custom
+
+extra:
+  homepage: https://www.mci.edu/de/
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sebamci
+    #- icon: bootstrap/IV
+    #  link: https://tirol.iv.at/
+
+
+
+
+markdown_extensions:
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.mark
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.tilde
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      toc_depth: 0
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+    - Home: index.md
+    - System Overview: A_System_Overview/page1.md
+    #- Project Introduction: A_Project_Introduction/page1.md
+    #- Linux Introduction: 
+    #    - Installing Ubuntu: A1_Linux_Introduction/linux_installation.md
+    #    - Working with Ububtu: A1_Linux_Introduction/linux_guide.md
+    #- ROS Introduction:
+    #    - Installing ROS: B_Getting_started/installation.md
+    #    - Set up ROS Workspace: B_Getting_started/workspace.md
+    ##- Getting started:
+    ##    - Working with Ubuntu: B_Getting_started/terminal.md
+    ##    - Installing ROS: B_Getting_started/installation.md
+    ##    - Set up a Workspace: B_Getting_started/workspace.md
+    #- Using Multiple Robots:
+    #    - ROS domain ID and Namespaces: F_Multiple/multiple_robots.md
+    #    - Introduction to ROS2 nodes: B1_Concepts/Node.md
+    #    - Moving a turtle: B1_Concepts/Move.md
+    ##- What is ROS2?:
+    ##  - B1_Concepts/index.md # Concepts
+    ##  - ROS2 Nodes: B1_Concepts/Node.md
+    ##- Let's light up the Turtlebot4: # Would leave that part out
+    ##  - C_Node/index.md  
+    ##  - Settings in the Environment: C_Node/Environment.md
+    ##  - Publisher/Subscriber Node to light up the TB4: C_Node/node_script.md
+    ##  - Dealing with QoS (Quality of Service): C_Node/QoS.md
+    #- Lidar Distance Measurement:
+    #  - D_Service/index.md
+    #  - Settings in the Environment: D_Service/Environment.md
+    #  - Service Node Lidar Distance Measurement: D_Service/service_script.md
+
+    #- Camera Pose Estimation: 
+    #  - D1_Service/index.md
+    #  - Using the Camera: D1_Service/Camera.md
+    #  - Settings in the Environment: D1_Service/Environment_pose.md
+    #  - Writing the Pose Estimation Service: D1_Service/PoseEstimation.md
+    #- Fake Machine Undocking: 
+    #  - E_Action/index.md
+    #  - Settings in the Environment: E_Action/Environment.md
+    #  - Action Node Python script: E_Action/action_script.md
+    #- Fake Machine Docking: 
+    #  - E1_Action/index.md
+    #  - Settings in the Environment: E1_Action/Environment.md
+    #  - Action Node Python script: E1_Action/action_script.md
+    #- Operating the Elevator: Z_Elevator_Action/connect.md
+    # 
+    #- Battery Observation: 
+    #  - Settings in the Environment: N_Battery/environment.md
+    #  - Subscriber Node Python Script: N_Battery/subscriber_script.md
+
+    #- SLAM and the NAV2 Toolbox:
+    #  - SLAM concepts: G_MN/slam.md
+    #  - Mapping: G_MN/mapping.md
+    #  - NAV2 concepts: G_MN/nav2.md
+    #  - Navigating the environment manually: G_MN/navigation.md
+    #  - Get coordinates to navigate: G_MN/poses.md
+
+    #- Bash Script Creation: 
+    #  - O_Bash/intro.md
+    #  - Run Pick and Place: O_Bash/pickandplace.md
+
+    #- Launching all Nodes: #Change to my version
+    #  - E2_Launch_File/index.md
+    #  - Creating the Launch Package and Setup: E2_Launch_File/setup.md
+    #  - Writing the Launch file: E2_Launch_File/launch.md
+    #
+    #
+
+    #- Python Script Creation:
+    #  - P_Python/intro.md
+    #  - Settings in the Environment: P_Python/environment.md
+    #  - Write Pick and Place Script: P_Python/pickandplace.md
+    #  #- Write Multi Robot Coordinator: P_Python/coordinator
+  
+      
+
+
+plugins:
+  - mkdocs-video:
+      is_video: True
+      video_muted: True
+      video_controls: False
+      video_autoplay: True
+      css_style:
+        width: "100%"
+  - glightbox:
+      effect: zoom
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: false
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: false
+      caption_position: bottom
+  - search:
+      lang: en
+  
+extra_css:
+  - stylesheets/extra.css
+
+
+copyright: |
+  &copy; 2025 <a href="https://github.com/ManagementCenterInnsbruck"  target="_blank" rel="noopener">Sebastian Bachlechner</a>
