@@ -4,6 +4,7 @@ theme:
   name: material
   logo: logo.png
   features:
+    - navigation.footer
     - navigation.top
     - navigation.indexes
     - navigation.path
@@ -84,7 +85,12 @@ extra_javascript:
 nav:
     - Home: index.md
     - System Overview: A_System_Overview/page1.md
-    #- Project Introduction: A_Project_Introduction/page1.md
+    - Mechanical Assembly:
+        - Mechanical Assembly: B_Assembly/index.md
+        - Equip the Base Plate: B_Assembly/base_plate.md
+        - Assemble the Top Plate: B_Assembly/top_plate.md
+        - Preparing the Beam: B_Assembly/beam.md
+        - Final Assembly: B_Assembly/final_assembly.md
     #- Linux Introduction: 
     #    - Installing Ubuntu: A1_Linux_Introduction/linux_installation.md
     #    - Working with Ububtu: A1_Linux_Introduction/linux_guide.md
@@ -184,4 +190,4 @@ extra_css:
 
 
 copyright: |
-  &copy; 2025 <a href="https://github.com/ManagementCenterInnsbruck"  target="_blank" rel="noopener">Sebastian Bachlechner</a>
+  &copy; 2025 <target="_blank" rel="noopener">Sebastian Bachlechner</a>

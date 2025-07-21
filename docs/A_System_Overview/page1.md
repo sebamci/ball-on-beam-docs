@@ -4,7 +4,7 @@ The Ball-on-Beam platform is a classical benchmark system in control engineering
 
 The system consists of a beam actuated by a servo motor and a ball whose position is to be stabilized by feedback control. Due to its inherent instability and nonlinear dynamics, it is ideal for teaching model-based control methods, real-time implementation, and system identification.
 
-<center>IMG 3D Model</center>
+<center>IMG of real system</center>
 
 ## Objectives
 

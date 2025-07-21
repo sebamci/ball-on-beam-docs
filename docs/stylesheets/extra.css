@@ -33,3 +33,11 @@
   --md-primary-fg-color: #004983;
   --md-accent-fg-color: #ff9900;
 }
+
+.md-typeset img {
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
