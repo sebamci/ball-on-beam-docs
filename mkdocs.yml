@@ -84,88 +84,31 @@ extra_javascript:
 
 nav:
     - Home: index.md
-    - System Overview: A_System_Overview/System_Overview.md
+    - System Overview: A_System_Overview/01_System_Overview.md
     - Assembly:
         - Assembly: B_Assembly/index.md
-        - Equip the Base Plate: B_Assembly/base_plate.md
-        - Assemble the Top Plate: B_Assembly/top_plate.md
-        - Preparing the Beam: B_Assembly/beam.md
-        - Final Mechanical Assembly: B_Assembly/final_assembly.md
-        - Wiring: B_Assembly/wiring.md
+        - Equip the Base Plate: B_Assembly/01_base_plate.md
+        - Assemble the Top Plate: B_Assembly/02_top_plate.md
+        - Preparing the Beam: B_Assembly/03_beam.md
+        - Final Mechanical Assembly: B_Assembly/04_final_assembly.md
+        - Wiring: B_Assembly/05_wiring.md
     - Software Setup:
         - Software Setup: C_Software/index.md
-        - Required Tools: C_Software/tools.md
-        - Simulink Setup: C_Software/simulink_setup.md
-        - Test & Troubleshooting: C_Software/testing.md
-    #- Linux Introduction: 
-    #    - Installing Ubuntu: A1_Linux_Introduction/linux_installation.md
-    #    - Working with Ububtu: A1_Linux_Introduction/linux_guide.md
-    #- ROS Introduction:
-    #    - Installing ROS: B_Getting_started/installation.md
-    #    - Set up ROS Workspace: B_Getting_started/workspace.md
-    ##- Getting started:
-    ##    - Working with Ubuntu: B_Getting_started/terminal.md
-    ##    - Installing ROS: B_Getting_started/installation.md
-    ##    - Set up a Workspace: B_Getting_started/workspace.md
-    #- Using Multiple Robots:
-    #    - ROS domain ID and Namespaces: F_Multiple/multiple_robots.md
-    #    - Introduction to ROS2 nodes: B1_Concepts/Node.md
-    #    - Moving a turtle: B1_Concepts/Move.md
-    ##- What is ROS2?:
-    ##  - B1_Concepts/index.md # Concepts
-    ##  - ROS2 Nodes: B1_Concepts/Node.md
-    ##- Let's light up the Turtlebot4: # Would leave that part out
-    ##  - C_Node/index.md  
-    ##  - Settings in the Environment: C_Node/Environment.md
-    ##  - Publisher/Subscriber Node to light up the TB4: C_Node/node_script.md
-    ##  - Dealing with QoS (Quality of Service): C_Node/QoS.md
-    #- Lidar Distance Measurement:
-    #  - D_Service/index.md
-    #  - Settings in the Environment: D_Service/Environment.md
-    #  - Service Node Lidar Distance Measurement: D_Service/service_script.md
-
-    #- Camera Pose Estimation: 
-    #  - D1_Service/index.md
-    #  - Using the Camera: D1_Service/Camera.md
-    #  - Settings in the Environment: D1_Service/Environment_pose.md
-    #  - Writing the Pose Estimation Service: D1_Service/PoseEstimation.md
-    #- Fake Machine Undocking: 
-    #  - E_Action/index.md
-    #  - Settings in the Environment: E_Action/Environment.md
-    #  - Action Node Python script: E_Action/action_script.md
-    #- Fake Machine Docking: 
-    #  - E1_Action/index.md
-    #  - Settings in the Environment: E1_Action/Environment.md
-    #  - Action Node Python script: E1_Action/action_script.md
-    #- Operating the Elevator: Z_Elevator_Action/connect.md
-    # 
-    #- Battery Observation: 
-    #  - Settings in the Environment: N_Battery/environment.md
-    #  - Subscriber Node Python Script: N_Battery/subscriber_script.md
-
-    #- SLAM and the NAV2 Toolbox:
-    #  - SLAM concepts: G_MN/slam.md
-    #  - Mapping: G_MN/mapping.md
-    #  - NAV2 concepts: G_MN/nav2.md
-    #  - Navigating the environment manually: G_MN/navigation.md
-    #  - Get coordinates to navigate: G_MN/poses.md
-
-    #- Bash Script Creation: 
-    #  - O_Bash/intro.md
-    #  - Run Pick and Place: O_Bash/pickandplace.md
-
-    #- Launching all Nodes: #Change to my version
-    #  - E2_Launch_File/index.md
-    #  - Creating the Launch Package and Setup: E2_Launch_File/setup.md
-    #  - Writing the Launch file: E2_Launch_File/launch.md
-    #
-    #
-
-    #- Python Script Creation:
-    #  - P_Python/intro.md
-    #  - Settings in the Environment: P_Python/environment.md
-    #  - Write Pick and Place Script: P_Python/pickandplace.md
-    #  #- Write Multi Robot Coordinator: P_Python/coordinator
+        - Required Tools: C_Software/01_tools.md
+        - Simulink Setup: C_Software/02_simulink_setup.md
+        - Test & Troubleshooting: C_Software/03_testing.md
+    - Course Tasks:
+        - Overview: D_Course_tasks/index.md
+        - SoftPot Sensor: D_Course_tasks/01_beam_softpot.md
+        - Servo Motor: D_Course_tasks/02_servo.md
+        - Rotary Knob: D_Course_tasks/03_rotary_knob.md
+        - Setpoint Generation: D_Course_tasks/04_control_softpot.md
+        - Manual Control Mode: D_Course_tasks/05_manual_mode.md
+        - Quick PID Test: D_Course_tasks/06_pid_basic.md
+        - PID Fine Tuning: D_Course_tasks/07_pid_expert.md
+        - Control Panel & Modes: D_Course_tasks/08_control_panel.md
+        - Show Mode: D_Course_tasks/09_show_mode.md
+    
   
       
 
