@@ -43,6 +43,8 @@ The base plate serves as the structural and electronic foundation of the Ball-on
     - Attach the rotary angle sensor to the base plate using the provided M3 screws and spacers.
 
 ---
+Once all components—including the Arduino, shield, SoftPot sensor, and control interface—are properly installed, the base plate assembly is complete. The result should resemble the setup shown below.
+
 
 ![Base Plate with mounted components (3D model)](images/Fully_Assembled_Base_Plate.png)
 

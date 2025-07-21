@@ -32,10 +32,12 @@ The top plate defines the rotational axis of the beam by holding two precision b
     ![Beam Support Brackets (3D model)](images/Beam_Support_Brackets.png)
     <center>Beam Support Brackets (3D model)</center>
 
-    Once all components—the servo motor, servo horn linkage, and beam support brackets—are securely mounted, the top plate assembly is complete. The result should match the configuration shown below.
+---
+
+Once all components—the servo motor, servo horn linkage, and beam support brackets—are securely mounted, the top plate assembly is complete. The result should match the configuration shown below.
 
 
 
-    ![Top Plate fully assembled (3D model)](images/Fully_Assembled_Top_Plate.png)
+![Top Plate fully assembled (3D model)](images/Fully_Assembled_Top_Plate.png)
 
-    <center>Top Plate fully assembled (3D model)</center>
+<center>Top Plate fully assembled (3D model)</center>
