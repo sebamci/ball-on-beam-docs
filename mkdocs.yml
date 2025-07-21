@@ -84,7 +84,7 @@ extra_javascript:
 
 nav:
     - Home: index.md
-    - System Overview: A_System_Overview/page1.md
+    - System Overview: A_System_Overview/System_Overview.md
     - Assembly:
         - Assembly: B_Assembly/index.md
         - Equip the Base Plate: B_Assembly/base_plate.md
@@ -92,6 +92,11 @@ nav:
         - Preparing the Beam: B_Assembly/beam.md
         - Final Mechanical Assembly: B_Assembly/final_assembly.md
         - Wiring: B_Assembly/wiring.md
+    - Software Setup:
+        - Software Setup: C_Software/index.md
+        - Required Tools: C_Software/tools.md
+        - Simulink Setup: C_Software/simulink_setup.md
+        - Test & Troubleshooting: C_Software/testing.md
     #- Linux Introduction: 
     #    - Installing Ubuntu: A1_Linux_Introduction/linux_installation.md
     #    - Working with Ububtu: A1_Linux_Introduction/linux_guide.md
