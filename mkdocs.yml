@@ -98,16 +98,17 @@ nav:
         - Simulink Setup: C_Software/02_simulink_setup.md
         - Test & Troubleshooting: C_Software/03_testing.md
     - Course Tasks:
-        - Overview: D_Course_tasks/index.md
-        - SoftPot Sensor: D_Course_tasks/01_beam_softpot.md
-        - Servo Motor: D_Course_tasks/02_servo.md
-        - Rotary Knob: D_Course_tasks/03_rotary_knob.md
-        - Setpoint Generation: D_Course_tasks/04_control_softpot.md
-        - Manual Control Mode: D_Course_tasks/05_manual_mode.md
-        - Quick PID Test: D_Course_tasks/06_pid_basic.md
-        - PID Fine Tuning: D_Course_tasks/07_pid_expert.md
-        - Control Panel & Modes: D_Course_tasks/08_control_panel.md
-        - Show Mode: D_Course_tasks/09_show_mode.md
+        - Course Tasks: D_Course_tasks/index.md
+        - I. Read Ball Position: D_Course_tasks/01_beam_softpot.md
+        - II. Control the Beam: D_Course_tasks/02_servo.md
+        - III. Move the Beam Manually: D_Course_tasks/03_rotary_knob.md
+        - IV. Generate Setpoints: D_Course_tasks/04_setpoint.md
+        - V. Adjust Target with SoftPot: D_Course_tasks/05_control_softpot.md
+        - VI. Basic PID Controller: D_Course_tasks/06_pid_basic.md
+        - VII. Tune the PID Controller: D_Course_tasks/07_pid_expert.md
+        - VIII. Track Ball with SoftPot: D_Course_tasks/08_subsystem_control_softpot.md
+        - IX. Add User Interface: D_Course_tasks/09_control_panel.md
+        - X. Show Mode: D_Course_tasks/10_show_mode.md
     
   
       

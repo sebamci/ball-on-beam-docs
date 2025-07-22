@@ -9,13 +9,13 @@ This section explains how to set up the Simulink environment to work with the Ba
 The Ball-on-Beam platform uses a custom Simulink block library that contains pre-configured blocks for sensors, actuators, and control logic.
 
 - Open MATLAB.
-- Add the `Simulink/` folder permanently to your MATLAB path by running the following command:
+- Add the `Custom_Library/` folder permanently to your MATLAB path by running the following command:
 
 ```matlab
 addpath('path/to/your/ball-on-beam-docs/Simulink/Custom_Library');
 savepath;
 ```
-- Alternatively, you can open the library directly by navigating to the `Simulink/Custom_Library` directory in MATLAB and double-clicking the `ball_on_beam_library.slx` file.
+- Now you can find the custom Ball-on-Beam Library in your Simulink library browser.
 
 ![Simulink Custom Library](images/simulink_library.png)
 <center>Custom Simulink library containing Ball-on-Beam-specific blocks</center>
@@ -40,37 +40,24 @@ Before generating code or uploading to the Arduino Due, you must configure the S
 
 Follow these steps to select the Arduino Due as target hardware:
 
-1. Open your Simulink model.
+1. Open a new empty Simulink model.
 2. Click on the **"Model Settings"** button (or use `Ctrl+E`).
 3. In the **Configuration Parameters** window, go to **"Hardware Implementation"**.
 4. Under **"Hardware board"**, select `Arduino Due` from the dropdown list.
-5. Confirm all settings and close the window.
+5. Apply all settings and close the window.
 
 > This configuration ensures that code generation and deployment are set up correctly for the Arduino Due.
 
 ---
 
-![Simulink Toolbar showing Model Settings button](images/simulink_model_settings_button.png)
+![Simulink Toolbar showing Model Settings button](images/access_model_settings.png)
 <center>Access the Model Settings via the toolbar or Ctrl+E</center>
 
-![Simulink Configuration Parameters window](images/simulink_model_settings_window.png)
+![Simulink Configuration Parameters window](images/model_settings.png)
 <center>Model Configuration Parameters window</center>
 
-![Simulink Hardware Implementation tab with Arduino Due selected](images/simulink_hardware_tab_due.png)
+![Simulink Hardware Implementation tab with Arduino Due selected](images/model_settings_with_due.png)
 <center>Hardware Implementation tab with Arduino Due selected</center>
-
----
-
-
-## 4. Create a New Model
-
-To build your own control system:
-
-1. Open a new Simulink model.
-2. Drag the required blocks from the custom library and default library into the new model.
-3. Connect the blocks using standard Simulink lines.
-4. Add scopes for visualization if needed.
-5. Save the model as `ball_on_beam_model.slx`.
 
 ---
 
