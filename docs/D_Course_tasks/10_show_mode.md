@@ -8,13 +8,13 @@ In this final task, you will combine all previously developed components into on
 
 Ensure your Simulink model includes all necessary components from previous tasks. This includes:
 
-- **Beam SoftPot**: Reads the current ball position.
-- **Control SoftPot**: Provides real-time target position (setpoint).
-- **Servo Controller**: Controls beam angle based on the selected mode.
-- **PID Controller**: Performs closed-loop control in automatic mode.
-- **Rotary Knob**: Allows manual beam control in manual mode.
-- **Pushbutton**: Toggles between system modes.
-- **NeoPixel LEDs**: Provide live visual feedback on active mode.
+- **Beam SoftPot**: Reads the current ball position
+- **Control SoftPot**: Provides real-time target position (setpoint)
+- **Servo Controller**: Controls beam angle based on the selected mode
+- **PID Controller**: Performs closed-loop control in automatic mode
+- **Rotary Knob**: Allows manual beam control in manual mode
+- **Pushbutton**: Toggles between system modes
+- **NeoPixel LEDs**: Provide live visual feedback on active mode
 
 > All subsystems should now work seamlessly together. Mode switching, signal routing, and feedback must be reliable and robust.
 
@@ -25,11 +25,11 @@ Ensure your Simulink model includes all necessary components from previous tasks
 The final Simulink model includes:
 
 - A **mode selector logic** that determines:
-  - Whether the PID controller is active.
-  - Which signal is used as the setpoint.
-  - Whether manual beam control is enabled.
-- A **multiplexer** for switching between control signals.
-- Clear signal routing and groupings for readability.
+    - Whether the PID controller is active
+    - Which signal is used as the setpoint
+    - Whether manual beam control is enabled
+- A `Switch Block` for switching between control signals
+- Clear signal routing and groupings for readability
 
 ![Final integrated model structure](images/show_mode_block_diagram.png)
 <center>Overview of the full system architecture in Show Mode</center>
@@ -53,17 +53,7 @@ Follow these steps for a smooth demonstration:
 
 ---
 
-## 4. Safety Checks
-
-Before and during the demo:
-
-- Check that the servo moves smoothly and silently.
-- Ensure no cables obstruct the moving parts.
-- Avoid quick or extreme setpoint changes that might cause the ball to jump.
-
----
-
-## 5. Summary
+## 4. Summary
 
 | Feature              | Demonstrated Element                                  |
 |----------------------|--------------------------------------------------------|

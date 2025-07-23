@@ -21,11 +21,11 @@ The user interface enables switching between different operating modes of the Ba
 Extend your current Simulink model:
 
 - Drag the following blocks from the custom library:
-  - `PushButton_ModeSelector`
-  - `NeoPixel_Controller`
+    - `PushButton_ModeSelector`
+    - `NeoPixel_Controller`
 - Route the active mode signal to both:
-  - A `Switch Case` block that selects between manual and automatic control signals
-  - The `NeoPixel_Controller` block for visual feedback
+    - A `Switch Case` block that selects between manual and automatic control signals
+    - The `NeoPixel_Controller` block for visual feedback
 
 ![UI control logic in Simulink](images/ui_mode_selector_block.png)
 <center>Mode control logic integrated into the control system</center>
@@ -40,6 +40,15 @@ Extend your current Simulink model:
 > Each press advances to the next mode (e.g. Simulink → Manual → Softpot → Simulink …)
 
 ---
+
+## 4. Deploy and Test
+
+- Deploy the model using `Monitor & Tune`.
+- Press the pushbutton to cycle through the modes and observe the LED feedback:
+    - **Red**: Simulink Mode (PID control)
+    - **Green**: Rotary Knob Mode (manual control)
+    - **Blue**: Control SoftPot Mode (dynamic setpoint)
+- In addition, the NeoPixel LED should light up in the corresponding area and color of the selected mode.
 
 ## 5. Summary
 
