@@ -29,10 +29,13 @@ The course is divided into the following tasks:
 7. **Tune the PID Controller**  
    Analyze system behavior with tuned PID parameters and optimize for stability and response.
 
-8. **Add User Interface**  
+8. **Track Ball with SoftPot**
+   Implement a control loop that uses the SoftPot to track the ball position dynamically, adjusting the beam angle accordingly.
+
+9. **Add User Interface**  
    Switch between control modes using a pushbutton and indicate system states with NeoPixel LEDs.
 
-9. **Show Mode**  
+10. **Show Mode**  
    Integrate all functions into a final demonstration-ready setup combining real-time control and user interface.
 
 > Each task builds upon the previous one, make sure to complete them in order and always work in the same Simulink model and expand it as you progress.

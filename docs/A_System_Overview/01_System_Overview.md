@@ -10,11 +10,11 @@ The system consists of a beam actuated by a servo motor and a ball whose positio
 
 This project aims to:
 
-- Improve the mechanical stability and modularity of the platform,
-- Enhance sensor precision and reduce electrical noise through ADC upgrades,
-- Implement a Simulink-based control framework for real-time operation,
-- Provide full documentation for assembly, calibration, and software setup.
-- Facilitate hands-on learning of control engineering concepts through practical exercises.
+- Improve the mechanical stability and modularity of the platform
+- Enhance sensor precision and reduce electrical noise through ADC upgrades
+- Implement a Simulink-based control framework for real-time operation
+- Provide full documentation for assembly, calibration, and software setup
+- Facilitate hands-on learning of control engineering concepts through practical exercises
 
 
 ## Key Features
@@ -28,10 +28,10 @@ This project aims to:
 
 The platform is specifically designed for students to:
 
-- Gain hands-on experience with sensors, actuators, and embedded systems,
-- Understand the design and tuning of PID and lead controllers,
-- Experiment with physical modeling and linearization in Simulink,
-- Perform real-time control tasks and analyze system responses.
+- Gain hands-on experience with sensors, actuators, and embedded systems
+- Understand the design and tuning of PID and lead controllers
+- Experiment with physical modeling and linearization in Simulink
+- Perform real-time control tasks and analyze system responses
 
 ---
 

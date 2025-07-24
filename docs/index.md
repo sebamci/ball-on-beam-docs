@@ -8,13 +8,13 @@ The Ball-on-Beam system is a classical control engineering benchmark. It provide
 
 In this course, you will:
 
-- explore the mechanical and electronic design of the platform,
-- learn how to integrate sensors (e.g., soft potentiometers) and actuators (e.g., servos),
-- build and adapt Simulink models for system control,
-- utilize simulation and real-time interfaces,
-- and bring the system to life through calibration and testing.
+- explore the mechanical and electronic design of the platform
+- learn how to integrate sensors (e.g., soft potentiometers) and actuators (e.g., servos)
+- build and adapt Simulink models for system control
+- utilize simulation and real-time interfaces
+- and bring the system to life through calibration and testing
 
-The content is hands-on and application-oriented: step-by-step guides, visual explanations, and example code help you implement everything efficiently.
+The content is hands-on and application-oriented: step-by-step guides, visual explanations, and example models help you implement everything efficiently.
 
 🔧 Ready? Let’s bring classic control engineering to life — one beam, one ball at a time.
 
