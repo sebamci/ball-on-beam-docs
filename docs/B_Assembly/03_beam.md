@@ -28,8 +28,9 @@ The beam serves as the dynamic element of the Ball-on-Beam platform. It holds th
     - Insert two M3 nuts into the dedicated hexagonal recesses on the opposite end of the beam and fasten the top bracket with two M3 screws.
 
 4. **Add Spacers and Countersunk Screws**
-    - Place the two lower spacers underneath the beam structure.
-    - Insert two countersunk screws from the bottom and tighten them into the nuts from step 3.
+    - Insert two M3 threaded sleeves into the bearing mounting parts.
+    - Place the spacers underneath the beam structure.
+    - Insert two countersunk screws from the bottom and tighten them into the threaded sleeves.
     - Verify alignment of the beam structure and ensure mechanical stiffness.
 
     ![Beam structure with bearing mount (3D model)](images/Beam_Bearing_Mount.png)
