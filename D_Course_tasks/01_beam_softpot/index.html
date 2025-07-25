@@ -943,8 +943,8 @@
 <blockquote>
 <p>Make sure the sensor is properly fixed on the beam and aligned with the ball path.</p>
 </blockquote>
-<p><a class="glightbox" href="images/softpot_block_connection.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="SoftPot Block Connection" src="images/softpot_block_connection.png"></a></p>
-<center>Calib_SoftPot block connected to Scope for live signal monitoring</center>
+<p><a class="glightbox" href="images/softpot_block_calibration.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="SoftPot Block Connection" src="images/softpot_block_calibration.png"></a></p>
+<center>Calib_SoftPot block connected to Display for calibration</center>
 
 <hr>
 <h2 id="2-calibration">2. Calibration</h2>
@@ -959,8 +959,8 @@
 <blockquote>
 <p>The output of the calibration block is now a normalized position signal in millimeters.</p>
 </blockquote>
-<p><a class="glightbox" href="images/softpot_calibration_scope.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Calibration Setup" src="images/softpot_calibration_scope.png"></a></p>
-<center>Calibrated SoftPot block</center>
+<p><a class="glightbox" href="../images/softpot_calibration_scope.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Calibration Setup" src="../images/softpot_calibration_scope.png"></a></p>
+<center>Calibrated SoftPot block connected to Scope</center>
 
 <hr>
 <h2 id="3-run-your-first-bob-model">3. Run Your First BoB Model</h2>
@@ -975,8 +975,8 @@
 <blockquote>
 <p>This test confirms that Simulink is communicating correctly with the hardware and that the SoftPot is providing meaningful, real-time data.</p>
 </blockquote>
-<p><a class="glightbox" href="images/softpot_minimal_test_model.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Minimal Simulink test model for SoftPot" src="images/softpot_minimal_test_model.png"></a></p>
-<center>Minimal Simulink test model for the calibrated SoftPot</center>
+<p><a class="glightbox" href="../images/softpot_minimal_test_model.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Minimal Simulink test model for SoftPot" src="../images/softpot_minimal_test_model.png"></a></p>
+<center>Scope of Ball tracked by the SoftPot in real-time</center>
 
 <hr>
 <h2 id="4-test-and-validate">4. Test and Validate</h2>
@@ -985,10 +985,12 @@
 <li>The full range should approximately match the physical length of the beam (0 mm to 189 mm).</li>
 <li>Look out for:<ul>
 <li>Non-linearity</li>
-<li>Jumps or noise</li>
 </ul>
 </li>
 </ul>
+<blockquote>
+<p>Note: The discontinuities in the graph occur when the ball reaches the edge of the beam and temporarily loses contact with the SoftPot sensor.</p>
+</blockquote>
 <hr>
 <h2 id="5-summary">5. Summary</h2>
 <table>
