@@ -8,7 +8,7 @@ This task introduces the SoftPot linear position sensor as the primary input for
 
 - The Beam SoftPot sensor is connected to the `Beam` Molex KK input of the Arduino shield via the provided cable.
 - In Simulink, open your model and drag the `Calib_Beam_SoftPot` block from the custom library into your diagram.
-- Connect the output of the `Calib_Beam_SoftPot` block to a `Scope` block or a `Display` block to monitor the raw analog values.
+- Connect the output of the `Calib_Beam_SoftPot` block to a `Display` block to monitor the raw analog values.
 
 > Make sure the sensor is properly fixed on the beam and aligned with the ball path.
 
@@ -68,8 +68,8 @@ Follow these steps:
 | Step             | Action                                                     |
 |------------------|------------------------------------------------------------|
 | Hardware         | Control SoftPot must be connected via RLU 3-pin cable      |
-| Calibration      | Use `Calib_Beam_SoftPot` block from custom library              |
-| Simulink Block   | Use `Read_Ball_Position` block from custom library                    |
+| Calibration      | Use `Calib_Beam_SoftPot` block from custom library         |
+| Simulink Block   | Use `Read_Ball_Position` block from custom library         |
 | Visualization    | Scope block or display block for real-time feedback        |
 
 Once this task is complete, you have a reliable analog input for ball position and can proceed with servo integration in the next task.
