@@ -29,7 +29,7 @@ Use the following starting values for the PID controller:
 | Parameter | Value   |
 |-----------|---------|
 | P         | 0.0004  |
-| I         | 0.0004  |
+| I         | 0.00045 |
 | D         | 0.00007 |
 | N         | 10.00   |
 
