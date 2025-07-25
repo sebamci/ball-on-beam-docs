@@ -54,9 +54,9 @@ The servo needs to be centered so the beam is in a horizontal position when the 
 | Step             | Action                                                    |
 |------------------|-----------------------------------------------------------|
 | Hardware         | Servo connected correctly to shield servo output          |
-| Simulink Block   | Use `ServoPositionController` from custom library       |
+| Simulink Block   | Use `ServoPositionController` from custom library         |
 | Calibration      | Adjust horn for horizontal beam at 0° input               |
 | Input Signal     | Start with constant 0°, then test with dynamic sources    |
-| Testing          | Verify full movement range and smooth motion              |
+| Testing          | Verify full movement range                                |
 
-Once the servo responds correctly and the beam moves reliably, you're ready to proceed with manual control using the rotary knob.
+Once the servo responds correctly and the beam moves reliably, you're ready to proceed with manual control using the rotary knob on the Ball on Beam system.
