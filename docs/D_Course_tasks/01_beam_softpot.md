@@ -12,8 +12,8 @@ This task introduces the SoftPot linear position sensor as the primary input for
 
 > Make sure the sensor is properly fixed on the beam and aligned with the ball path.
 
-![SoftPot Block Connection](images/softpot_block_connection.png)
-<center>Calib_SoftPot block connected to Scope for live signal monitoring</center>
+![SoftPot Block Connection](images/softpot_block_calibration.png)
+<center>Calib_SoftPot block connected to Display for calibration</center>
 
 ---
 
@@ -29,7 +29,7 @@ This task introduces the SoftPot linear position sensor as the primary input for
 > The output of the calibration block is now a normalized position signal in millimeters.
 
 ![Calibration Setup](images/softpot_calibration_scope.png)
-<center>Calibrated SoftPot block</center>
+<center>Calibrated SoftPot block connected to Scope</center>
 
 ---
 
@@ -47,7 +47,7 @@ Follow these steps:
 > This test confirms that Simulink is communicating correctly with the hardware and that the SoftPot is providing meaningful, real-time data.
 
 ![Minimal Simulink test model for SoftPot](images/softpot_minimal_test_model.png)
-<center>Minimal Simulink test model for the calibrated SoftPot</center>
+<center>Scope of Ball tracked by the SoftPot in real-time</center>
 
 
 ---
@@ -58,7 +58,8 @@ Follow these steps:
 - The full range should approximately match the physical length of the beam (0 mm to 189 mm).
 - Look out for:
     - Non-linearity
-    - Jumps or noise
+
+> Note: The discontinuities in the graph occur when the ball reaches the edge of the beam and temporarily loses contact with the SoftPot sensor.
 
 ---
 
