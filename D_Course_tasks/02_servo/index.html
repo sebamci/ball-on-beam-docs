@@ -942,26 +942,26 @@
 <li><strong>White wire</strong>: Signal (W)</li>
 </ul>
 </li>
-<li>In Simulink, open your model and drag the <code>Servo_Position_Controller</code> block from the custom library into your diagram.</li>
+<li>In Simulink, open your model and drag the <code>ServoPositionController</code> block from the custom library into your diagram.</li>
 <li>Connect the input of the block to a <code>Constant</code> block (0 for center position) or a <code>Slider Gain</code> block for interactive testing.</li>
 </ul>
 <blockquote>
 <p>Make sure the servo is securely mounted and not mechanically blocked.</p>
 </blockquote>
-<p><a class="glightbox" href="images/servo_block_connection.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Servo block connected in Simulink" src="images/servo_block_connection.png"></a></p>
+<p><a class="glightbox" href="../images/servo_block_connection.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Servo block connected in Simulink" src="../images/servo_block_connection.png"></a></p>
 <center>Servo block connected to a constant input</center>
 
 <hr>
 <h2 id="2-calibrate-neutral-position">2. Calibrate Neutral Position</h2>
 <p>The servo needs to be centered so the beam is in a horizontal position when the input signal is at 0 rad.</p>
 <ul>
-<li>Use a <code>Constant</code> block with a value of <code>0</code> connected to the <code>Servo_Position_Controller</code> block.</li>
+<li>Use a <code>Constant</code> block with a value of <code>0</code> connected to the <code>ServoPositionController</code> block.</li>
 <li>Deploy the model using <code>Monitor &amp; Tune</code>.</li>
 <li>Manually adjust the servo horn and the two rod ends until the beam is perfectly parallel to the top plate.</li>
 <li>Tighten the servo horn screw carefully after alignment.</li>
 </ul>
 <blockquote>
-<p>⚠️ The input of the <code>Servo_Position_Controller</code> block directly represents the desired beam angle in <strong>radians</strong>.<br>
+<p>⚠️ The input of the <code>ServoPositionController</code> block directly represents the desired beam angle in <strong>radians</strong>.<br>
 For example, <code>0</code> corresponds to a level beam, while positive or negative values tilt the beam accordingly.<br>
 This definition is important for the later implementation of the feedback controller.</p>
 </blockquote>
@@ -971,15 +971,11 @@ This definition is important for the later implementation of the feedback contro
 <hr>
 <h2 id="3-test-range-of-motion">3. Test Range of Motion</h2>
 <ul>
-<li>Test the full motion range of the beam (±4° input ≈ ±0.07 rad).</li>
-<li>Ensure:<ul>
-<li>The servo moves freely.</li>
-<li>No mechanical obstructions are present.</li>
-<li>The beam is balanced and doesn't collide with the frame.</li>
+<li>Now adda <code>Knob</code>block to your model and connect it to the <code>Constant</code> to control the servo position dynamically.</li>
+<li>Set the knob range to <code>[-0.07, 0.07]</code> to cover the full range of motion.</li>
+<li>Deploy the model and turn the knob to observe the servo movement.</li>
 </ul>
-</li>
-</ul>
-<p><a class="glightbox" href="images/servo_motion_test.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Servo movement test" src="images/servo_motion_test.png"></a></p>
+<p><a class="glightbox" href="../images/servo_motion_test.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Servo movement test" src="../images/servo_motion_test.png"></a></p>
 <center>Testing servo response with dynamic input</center>
 
 <hr>
@@ -998,7 +994,7 @@ This definition is important for the later implementation of the feedback contro
 </tr>
 <tr>
 <td>Simulink Block</td>
-<td>Use <code>Servo_Position_Controller</code> from custom library</td>
+<td>Use <code>ServoPositionController</code> from custom library</td>
 </tr>
 <tr>
 <td>Calibration</td>
