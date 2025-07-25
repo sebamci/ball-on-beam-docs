@@ -18,7 +18,7 @@ Continue working in your existing model and add the following components:
 > You now have a full closed-loop control system for automatic ball balancing.
 
 ![Basic PID structure](images/pid_basic_diagram.png)
-<center>Closed-loop control with PID: setpoint – position → PID → servo</center>
+<center>Closed-loop control with PID controller</center>
 
 ---
 
@@ -28,10 +28,10 @@ Use the following starting values for the PID controller:
 
 | Parameter | Value   |
 |-----------|---------|
-| P         | 0.06    |
-| I         | 0.08    |
-| D         | 0.01    |
-| N         | 1.00    |
+| P         | 0.0004  |
+| I         | 0.0004  |
+| D         | 0.00007 |
+| N         | 10.00   |
 
 - Double-click the `PID Controller` block to enter these values.
 - These parameters are suitable for initial testing and allow you to observe the system response.
