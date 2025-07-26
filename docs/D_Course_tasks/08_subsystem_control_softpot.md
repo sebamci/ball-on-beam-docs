@@ -65,7 +65,7 @@ Inside your Simulink model:
 > Try moving the reference ball and observe how the beam adjusts to follow it.
 
 ![Ball tracking second ball](images/dual_ball_tracking_demo.png)
-<center>Scope of system tracking the reference ball in real time using PID control</center>
+<center>Scope of system tracking the reference ball (blue) in real time using PID control</center>
 
 ---
 
@@ -77,5 +77,9 @@ Inside your Simulink model:
 | `Read_Ball_Position`     | Measures actual ball position                    |
 | `PID_Controller_Tuned`   | Computes correction based on position error      |
 | `SoftPot_Tracking`       | Self-contained subsystem for dual-ball tracking  |
+| `Servo_Position_Controller` | Commands servo to adjust beam angle           |
+| `Output` blocks          | Visualize setpoint and actual position in Scope  |
+| `Switch Case`            | Allows mode switching for different control cases|
+
 
 With this modular control structure, you’ve created a reusable component for real-time reference tracking. This forms the basis for later integration into a complete system.
