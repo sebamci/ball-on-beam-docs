@@ -12,4 +12,5 @@ Each subchapter provides step-by-step instructions along with visual references 
 
 ---
 
-<center>Insert image: Complete 3D model of the assembled platform</center>
+![Fully Assembled Ball-on-Beam Platform (3D model)](images/Fully_Assembled_BoB.png)
+<center>Assembled Ball on Beam Platform</center>
