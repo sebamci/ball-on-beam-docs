@@ -109,6 +109,10 @@ nav:
         - VIII. Track Ball with SoftPot: D_Course_tasks/08_subsystem_control_softpot.md
         - IX. Add User Interface: D_Course_tasks/09_control_panel.md
         - X. Show Mode: D_Course_tasks/10_show_mode.md
+    - Insights:
+        - Insights: E_Insights/index.md
+        - SoftPot Accuracy Test: E_Insights/01_softpot_accuracy.md
+        - Create Custom I/O Blocks: E_Insights/02_create_io_blocks.md
     
   
       
