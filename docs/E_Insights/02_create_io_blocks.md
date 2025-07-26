@@ -103,10 +103,11 @@ This is useful for:
 ## 9. Troubleshooting
 
 Common issues include:
-        - **Folder Structure with invalid characters**: Ensure your folder names do not contain spaces or special characters (e.g. `C:\My Folder` should be `C:\My_Folder`).
-        - **Multiple I/O Builder Blocks not working together**: If you have multiple custom blocks, ensure they do not share the same function names or variable names in your C++ code. Each block should have unique identifiers to avoid conflicts. Another option to fix this issue is to change the first lines of the .h file to a unique name. Every block should have its own unique header guard to prevent conflicts.
 
-        Example:
+- **Folder Structure with invalid characters**: Ensure your folder names do not contain spaces or special characters (e.g. `C:\My Folder` should be `C:\My_Folder`).
+- **Multiple I/O Builder Blocks not working together**: If you have multiple custom blocks, ensure they do not share the same function names or variable names in your C++ code. Each block should have unique identifiers to avoid conflicts. Another option that could fix this issue is to change the first lines of the .h file to a unique name. Every block should have its own unique header guard to prevent conflicts.
+
+Example:
 
 ```cpp
 #ifndef EXAMPLE_H
