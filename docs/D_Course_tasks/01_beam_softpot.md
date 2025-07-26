@@ -13,18 +13,18 @@ This task introduces the SoftPot linear position sensor as the primary input for
 > Make sure the sensor is properly fixed on the beam and aligned with the ball path.
 
 ![SoftPot Block Connection](images/softpot_block_calibration.png)
-<center>Calib_SoftPot block connected to Display for calibration</center>
+<center>Calib_Beam_SoftPot block connected to Display for calibration</center>
 
 ---
 
 ## 2. Calibration
 
-- Move the ball to the **far left** of the beam and note the raw ADC value shown in the Scope.
+- Move the ball to the **far left** of the beam and note the raw ADC value shown in the `Display`.
 - Then move the ball to the **far right** and record that value as well.
 - These two values define the sensor's minimum and maximum.
-- Drag the `Read_Ball_Position` block from the custom library into your model.
-- Double click the `Read_Ball_Position` block to set and apply these values as calibration parameters.
-- Connect the output of the `Read_Ball_Position` block to a `Scope`.
+- Drag the `Beam_SoftPot` block from the custom library into your model.
+- Double click the `Beam_SoftPot` block to set and apply these values as calibration parameters.
+- Connect the output of the `Beam_SoftPot` block to a `Scope`.
 
 > The output of the calibration block is now a normalized position signal in millimeters.
 

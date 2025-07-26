@@ -58,7 +58,7 @@ Inside your Simulink model:
 > Try moving the reference ball and observe how the beam adjusts to follow it.
 
 ![Ball tracking second ball](images/dual_ball_tracking_demo.png)
-<center>System tracks the reference ball in real time using PID control</center>
+<center>Scope of system tracking the reference ball in real time using PID control</center>
 
 ---
 
