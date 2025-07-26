@@ -1,6 +1,6 @@
 # SoftPot Accuracy Test
 
-This page documents a manual accuracy test of the SoftPot linear sensor connected to a ADS1115 16bit ADC, used for ball position tracking on the Ball-on-Beam platform. The goal is to evaluate how closely the sensor's output matches the true physical position of the ball.
+This page documents a manual accuracy test of the SoftPot linear sensor, with 1% accuracy, connected to a ADS1115 16bit ADC, used for ball position tracking on the Ball-on-Beam platform. The goal is to evaluate how closely the sensor's output matches the true physical position of the ball.
 
 ---
 
@@ -37,7 +37,7 @@ The absolute deviation between measurement and ground truth is shown below:
 Key observations:
 
 - Most deviations are below ±0.6 mm
-- One outlier (~0.9 mm) occurred near the edge
+- One outlier (~0.8 mm) occurred
 - The error is not strongly biased to one side, indicating symmetrical response.
 
 ---
