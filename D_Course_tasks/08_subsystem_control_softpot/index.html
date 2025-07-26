@@ -950,16 +950,21 @@
 <h2 id="2-build-the-subsystem">2. Build the Subsystem</h2>
 <p>Inside your Simulink model:</p>
 <ol>
-<li>Create a new <strong>Subsystem</strong> and name it <code>SoftPot_Tracking</code></li>
+<li>Create a new <code>Switch Case Action Subsystem</code> and name it as you wish (e.g., <code>SoftPot_Tracking</code>).</li>
 <li>Insert the following blocks into the subsystem:<ul>
 <li><code>Control_SoftPot</code> – reads the setpoint position</li>
-<li><code>Read_Ball_Position</code> – reads the actual ball position</li>
+<li><code>Beam_SoftPot</code> – reads the actual ball position</li>
 <li><code>Sum</code> block – computes error: (setpoint − position)</li>
 <li><code>PID_Controller_Tuned</code> – your tuned PID block</li>
-<li>Output: connect to <code>Servo_Position_Controller</code></li>
+<li><code>Servo_Position_Controller</code> – sends control signal to the servo</li>
+<li>Outputs: connect the signals from <code>Control_SoftPot</code> and <code>Beam_SoftPot</code> to two <code>Output</code> blocks for visualization in a Scope outside the subsystem</li>
+<li>Connect the blocks as in chapter VI, "Basic PID Control", but now use the <code>Control_SoftPot</code> as the setpoint source.</li>
 </ul>
 </li>
 </ol>
+<blockquote>
+<p>Note: You can just copy and paste the structure from your previous PID model and adapt it to use the SoftPot blocks.</p>
+</blockquote>
 <p><a class="glightbox" href="../images/subsystem_softpot_tracking.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="SoftPot tracking subsystem" src="../images/subsystem_softpot_tracking.png"></a></p>
 <center>Dedicated subsystem for tracking a second ball using Control SoftPot</center>
 
@@ -967,17 +972,17 @@
 <h2 id="3-connect-the-subsystem">3. Connect the Subsystem</h2>
 <ul>
 <li>Place the new subsystem into your <strong>main model</strong></li>
-<li>Feed the output of <code>SoftPot_Tracking</code> directly into the <code>Servo_Position_Controller</code> block</li>
-<li>Connect Scopes at the outputs of:<ul>
-<li><code>Control_SoftPot</code> (setpoint)</li>
-<li><code>Read_Ball_Position</code> (actual position)</li>
-<li><code>PID_Controller_Tuned</code> (control signal)</li>
-</ul>
-</li>
+<li>Connect the two output blocks to a <code>Scope</code> to visualize the setpoint and actual position.</li>
+<li>Connect the subsystem <code>Action Port</code> to a <code>Switch Case</code> block.</li>
+<li>Configure the <code>Switch Case</code> with three different cases <strong>{1,2, 3}</strong>. This will be needed for future tasks where you might want to switch between different control modes.</li>
+<li>Connect a <code>Constant</code> block to the <code>Switch Case</code> input to select the case (e.g. set it to 1 for now).</li>
 </ul>
 <blockquote>
 <p>Make sure the analog values from both SoftPots are correctly calibrated and mapped to millimeters.</p>
 </blockquote>
+<p><a class="glightbox" href="../images/subsystem_connection.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Subsystem connection" src="../images/subsystem_connection.png"></a></p>
+<center>Subsystem connected in the main model with Switch Case</center>
+
 <hr>
 <h2 id="4-run-and-test">4. Run and Test</h2>
 <ol>
