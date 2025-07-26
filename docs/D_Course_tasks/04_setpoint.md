@@ -34,6 +34,7 @@ In this task, you will learn how to generate setpoints for the target position o
 - Display the **ball position** (from `Read_Ball_Position`) and the **setpoint** on the same Scope.
 - Try to move the knob in a way that makes the ball position track the setpoint.
 - You can start with something simple like a constant setpoint or a step change, and then try more complex waveforms.
+- Safe this model in a new Simulink file (e.g. `Manual_Tracking.slx`) for later use.
 
 > This task demonstrates how difficult it is to manually follow even a simple trajectory.  
 > It provides an intuitive motivation for the next step: automatic PID control.

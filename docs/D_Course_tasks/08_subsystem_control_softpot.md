@@ -22,14 +22,18 @@ You will create a **modular subsystem** that contains all components required to
 
 Inside your Simulink model:
 
-1. Create a new **Subsystem** and name it `SoftPot_Tracking`
+1. Create a new `Switch Case Action Subsystem` and name it as you wish (e.g., `SoftPot_Tracking`).
 2. Insert the following blocks into the subsystem:
     - `Control_SoftPot` – reads the setpoint position
-    - `Read_Ball_Position` – reads the actual ball position
+    - `Beam_SoftPot` – reads the actual ball position
     - `Sum` block – computes error: (setpoint − position)
     - `PID_Controller_Tuned` – your tuned PID block
-    - Output: connect to `Servo_Position_Controller`
- 
+    - `Servo_Position_Controller` – sends control signal to the servo
+    - Outputs: connect the signals from `Control_SoftPot` and `Beam_SoftPot` to two `Output` blocks for visualization in a Scope outside the subsystem
+    - Connect the blocks as in chapter VI, "Basic PID Control", but now use the `Control_SoftPot` as the setpoint source.
+
+>Note: You can just copy and paste the structure from your previous PID model and adapt it to use the SoftPot blocks.
+
 ![SoftPot tracking subsystem](images/subsystem_softpot_tracking.png)
 <center>Dedicated subsystem for tracking a second ball using Control SoftPot</center>
 
@@ -38,13 +42,16 @@ Inside your Simulink model:
 ## 3. Connect the Subsystem
 
 - Place the new subsystem into your **main model**
-- Feed the output of `SoftPot_Tracking` directly into the `Servo_Position_Controller` block
-- Connect Scopes at the outputs of:
-    - `Control_SoftPot` (setpoint)
-    - `Read_Ball_Position` (actual position)
-    - `PID_Controller_Tuned` (control signal)
+- Connect the two output blocks to a `Scope` to visualize the setpoint and actual position.
+- Connect the subsystem `Action Port` to a `Switch Case` block.
+- Configure the `Switch Case` with three different cases **{1,2, 3}**. This will be needed for future tasks where you might want to switch between different control modes.
+- Connect a `Constant` block to the `Switch Case` input to select the case (e.g. set it to 1 for now).
+
 
 > Make sure the analog values from both SoftPots are correctly calibrated and mapped to millimeters.
+
+![Subsystem connection](images/subsystem_connection.png)
+<center>Subsystem connected in the main model with Switch Case</center>
 
 ---
 
