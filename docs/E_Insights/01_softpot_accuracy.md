@@ -58,9 +58,9 @@ The results confirm that:
 
 | Parameter                  | Value                     |
 |----------------------------|---------------------------|
-| Beam Length                | 190 mm                    |
+| Beam Length                | 189 mm                    |
 | Measurement Step Size      | 10 mm                     |
-| Max Deviation (abs)        | ~0.9 mm                   |
+| Max Deviation (abs)        | ~0.8 mm                   |
 | Typical Deviation Range    | ±0.6 mm                   |
 | Conclusion                 | Sufficiently accurate     |
 
