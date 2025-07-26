@@ -1129,15 +1129,17 @@ Don't change the function names or variables unless you also update them in the 
 <hr>
 <h2 id="9-troubleshooting">9. Troubleshooting</h2>
 <p>Common issues include:
-- <strong>Folder Structure with invalid characters</strong>: Ensure your folder names do not contain spaces or special characters (e.g. <code>C:\My Folder</code> should be <code>C:\My_Folder</code>).
-- <strong>Multiple I/O Builder Blocks not working together</strong>: If you have multiple custom blocks, ensure they do not share the same function names or variable names in your C++ code. Each block should have unique identifiers to avoid conflicts. Another option to fix this issue is to change the first lines of the .h file to a unique name. Every block should have its own unique header guard to prevent conflicts.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#ifndef EXAMPLE_H</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="cp">#define EXAMPLE_H</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">to</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="cp">#ifndef BEAM_SOFTPOT_H</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="cp">#define BEAM_SOFTPOT_H</span>
+    - <strong>Folder Structure with invalid characters</strong>: Ensure your folder names do not contain spaces or special characters (e.g. <code>C:\My Folder</code> should be <code>C:\My_Folder</code>).
+    - <strong>Multiple I/O Builder Blocks not working together</strong>: If you have multiple custom blocks, ensure they do not share the same function names or variable names in your C++ code. Each block should have unique identifiers to avoid conflicts. Another option to fix this issue is to change the first lines of the .h file to a unique name. Every block should have its own unique header guard to prevent conflicts.</p>
+<div class="highlight"><pre><span></span><code>```cpp
+#ifndef EXAMPLE_H
+#define EXAMPLE_H
+
+to
+
+#ifndef BEAM_SOFTPOT_H
+#define BEAM_SOFTPOT_H
+```
 </code></pre></div>
 <hr>
 <h2 id="summary">Summary</h2>
