@@ -127,6 +127,5 @@ to
 | Source Integration    | Add your `.cpp`, `.h`, or dummy files as needed          |
 | Port Definition       | Define inputs, outputs, and tunable parameters           |
 | Hardware Logic        | Setup and step functions for Arduino interaction         |
-| Reusability           | Create modular and reusable components                   |
 
 This approach gives you full flexibility to extend your Simulink-based control system with custom hardware functionality.
