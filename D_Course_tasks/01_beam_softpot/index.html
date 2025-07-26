@@ -944,17 +944,17 @@
 <p>Make sure the sensor is properly fixed on the beam and aligned with the ball path.</p>
 </blockquote>
 <p><a class="glightbox" href="images/softpot_block_calibration.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="SoftPot Block Connection" src="images/softpot_block_calibration.png"></a></p>
-<center>Calib_SoftPot block connected to Display for calibration</center>
+<center>Calib_Beam_SoftPot block connected to Display for calibration</center>
 
 <hr>
 <h2 id="2-calibration">2. Calibration</h2>
 <ul>
-<li>Move the ball to the <strong>far left</strong> of the beam and note the raw ADC value shown in the Scope.</li>
+<li>Move the ball to the <strong>far left</strong> of the beam and note the raw ADC value shown in the <code>Display</code>.</li>
 <li>Then move the ball to the <strong>far right</strong> and record that value as well.</li>
 <li>These two values define the sensor's minimum and maximum.</li>
-<li>Drag the <code>Read_Ball_Position</code> block from the custom library into your model.</li>
-<li>Double click the <code>Read_Ball_Position</code> block to set and apply these values as calibration parameters.</li>
-<li>Connect the output of the <code>Read_Ball_Position</code> block to a <code>Scope</code>.</li>
+<li>Drag the <code>Beam_SoftPot</code> block from the custom library into your model.</li>
+<li>Double click the <code>Beam_SoftPot</code> block to set and apply these values as calibration parameters.</li>
+<li>Connect the output of the <code>Beam_SoftPot</code> block to a <code>Scope</code>.</li>
 </ul>
 <blockquote>
 <p>The output of the calibration block is now a normalized position signal in millimeters.</p>
