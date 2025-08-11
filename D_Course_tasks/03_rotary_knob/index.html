@@ -1053,13 +1053,13 @@
 <blockquote>
 <p>This configuration creates a direct, manual control loop where the servo angle follows the knob position.</p>
 </blockquote>
-<p><a class="glightbox" href="images/manual_rotary_connection.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Manual control setup" src="images/manual_rotary_connection.png"></a></p>
+<p><a class="glightbox" href="../images/manual_rotary_connection.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Manual control setup" src="../images/manual_rotary_connection.png"></a></p>
 <center>Manual mode: Rotary knob directly drives the servo</center>
 
 <hr>
 <h2 id="2-understand-the-signal-mapping">2. Understand the Signal Mapping</h2>
 <ul>
-<li>The <code>Rotary_Manual</code> block maps the analog input to a beam angle in <strong>radians</strong>.</li>
+<li>The <code>Rotary_Pot</code> block maps the analog input to a beam angle in <strong>radians</strong>.</li>
 <li>The mapping range is:<br>
 <code>0 V</code> → <code>-0.07 rad</code> (beam tilted left)<br>
 <code>3.3 V</code> → <code>+0.07 rad</code> (beam tilted right)</li>
@@ -1073,7 +1073,7 @@
 <blockquote>
 <p>This test verifies that the full analog input range is usable and that the actuator responds as expected.</p>
 </blockquote>
-<p><a class="glightbox" href="images/manual_mode_live_test.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Manual control test" src="images/manual_mode_live_test.png"></a></p>
+<p><a class="glightbox" href="../images/manual_mode_live_test.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Manual control test" src="../images/manual_mode_live_test.png"></a></p>
 <center>Manual beam control using the rotary input</center>
 
 <hr>
@@ -1088,11 +1088,11 @@
 <tbody>
 <tr>
 <td>Hardware</td>
-<td>Rotary knob connected to <code>Rotary</code> Molex input</td>
+<td>Rotary knob connected to <code>Rotary</code> Grove input</td>
 </tr>
 <tr>
 <td>Simulink Blocks</td>
-<td><code>Rotary_Manual</code> block connected to <code>Servo_Position_Controller</code></td>
+<td><code>Rotary_Pot</code> block connected to <code>Servo_Position_Controller</code></td>
 </tr>
 <tr>
 <td>Signal Range</td>
