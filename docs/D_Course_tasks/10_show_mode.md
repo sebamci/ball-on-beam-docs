@@ -44,9 +44,9 @@ Follow these steps for a smooth demonstration:
 2. Observe LED feedback for the currently active mode.
 3. Place the ball at a random starting position on the beam.
 4. Use the pushbutton to cycle through modes:
-   - In **Rotary Mode**, manually stabilize the ball.
-   - In **Control SoftPot Mode**, place the second ball to define a setpoint.
-   - In **Simulink Mode**, demonstrate tracking of a generated sine wave or step response.
+    - In **Rotary Mode**, manually stabilize the ball.
+    - In **Simulink Mode**, demonstrate tracking of a generated sine wave or step response.
+    - In **Control SoftPot Mode**, place the second ball to define a setpoint.  
 5. Highlight how the system autonomously moves and stabilizes the ball.
 
 > Ensure the beam is level and all sensors are securely connected before running the demo.

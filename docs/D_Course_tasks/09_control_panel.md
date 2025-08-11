@@ -45,9 +45,9 @@ Extend your current Simulink model:
 
 - Deploy the model using `Monitor & Tune`.
 - Press the pushbutton to cycle through the modes and observe the LED feedback:
-    - **Red**: Simulink Mode (PID control)
-    - **Green**: Rotary Knob Mode (manual control)
-    - **Blue**: Control SoftPot Mode (dynamic setpoint)
+    - **Green**: e.g. Rotary Knob Mode (manual control)
+    - **Red**: e.g. Simulink Mode (PID control)
+    - **Blue**: e.g. Control SoftPot Mode (dynamic setpoint)
 - In addition, the NeoPixel LED should light up in the corresponding area and color of the selected mode.
 
 ## 5. Summary
